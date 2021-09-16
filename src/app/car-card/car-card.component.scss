@@ -1,0 +1,13 @@
+.car-card{
+    width: 100%;
+    padding: 15px;
+    box-shadow: 0 0 2px #878787;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.car-card:hover{
+    background-color: #ececec;
+}

@@ -1,0 +1,18 @@
+<div class="car--details">
+    <div class="cardetails">
+        <h4>
+            Car Details 
+            <button [routerLink]="['/']">Back</button>
+        </h4>
+        <hr>
+        <p>Borough : <span>{{carDetails?.borough}}</span></p>
+        <p>contributing factor vehicle 1 : <span>{{carDetails?.contributing_factor_vehicle_1}}</span></p>
+        <p>crash date and Time : <span>{{carDetails?.crash_date | date:"MMM/dd/y"}}</span> at <span>{{carDetails?.crash_time}}</span></p>
+        <p>number of cyclist injured : <span>{{carDetails?.number_of_cyclist_injured}}</span></p>
+        <p>number of cyclist killed : <span>{{carDetails?.number_of_cyclist_killed}}</span></p>
+        <p>off street name : <span>{{carDetails?.off_street_name}}</span></p>
+        <p>on street name : <span>{{carDetails?.on_street_name}}</span></p>
+        <p>vehicle type code1 : <span>{{carDetails?.vehicle_type_code1}}</span></p>
+        <p>zip code : <span>{{carDetails?.zip_code}}</span></p>
+    </div>
+</div>

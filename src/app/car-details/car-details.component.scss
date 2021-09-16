@@ -1,0 +1,32 @@
+.car--details {
+    margin-top: 4em;
+}
+.cardetails {
+    background: #e8e8e8;
+    padding: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 0 3px #878787;
+    border-radius: 4px;
+    font-family: sans-serif;
+    color: #5c5c5c;
+    h4 {
+        margin-bottom: 0;
+        button {
+            margin-left: 20px;
+            background-color: #211f1f;
+            color: #fff;
+            outline: none;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    }
+    p {
+        span {
+            font-weight: 600;
+            color: #000;
+        }
+    }
+}

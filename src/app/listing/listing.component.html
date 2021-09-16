@@ -1,0 +1,25 @@
+<div class="list-of-card-main">
+    <div class="filter-list">
+        <p>Filter By</p>
+        <select (change)="changeApplyFilter($event)">
+            <option value="">Select Filter</option>
+            <option value="crash_date">Date</option>
+        </select>
+    </div>
+    <div class="inner-car-body">
+        <ng-container *ngIf="!isApiCallInProgress;else loading">
+            <div class="next-pre-pagnation">
+                <button (click)="nextPreviousPage(false)">Pre</button>
+                <button (click)="nextPreviousPage(true)">Next</button>
+            </div>
+            <ng-container *ngFor="let data of cardListing">
+                <app-car-card [data]="data"></app-car-card>
+            </ng-container>
+        </ng-container>
+    </div>
+</div>
+
+
+<ng-template #loading>
+    Loading...
+</ng-template>

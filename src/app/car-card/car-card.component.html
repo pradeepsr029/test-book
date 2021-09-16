@@ -1,0 +1,11 @@
+<section class="car-card" [routerLink]="['/details', data.collision_id]">
+    <div class="inner--view-child">
+        Vehicle Type Code : <b>{{data?.vehicle_type_code1}}</b>
+    </div>
+    <div class="inner--view-child">
+        Vehicle Type Code 2: <b>{{data?.vehicle_type_code2}}</b>
+    </div>
+    <div class="inner--view-child">
+        Crash Date : <b>{{data?.crash_date | date:"MMM/dd/y"}}</b> at <b>{{data?.crash_time}}</b>
+    </div>
+</section>

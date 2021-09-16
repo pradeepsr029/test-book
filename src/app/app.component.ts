@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Pagination } from './classes/pagnation';
+import { HttpService } from './services/http.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'viewTest';
+  
+
+
+
 }
